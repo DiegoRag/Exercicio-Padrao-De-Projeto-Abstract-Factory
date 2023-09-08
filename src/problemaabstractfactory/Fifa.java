@@ -8,10 +8,9 @@ package problemaabstractfactory;
  *
  * @author lizz
  */
-class WiiGolf extends Esports {
-
-    public WiiGolf() {
-        super("WiiGolf");
+class Fifa extends Esports {
+    
+    public Fifa(){
+        super("Fifa");
     }
-
 }

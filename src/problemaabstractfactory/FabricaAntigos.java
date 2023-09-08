@@ -8,10 +8,16 @@ package problemaabstractfactory;
  *
  * @author lizz
  */
-class WiiGolf extends Esports {
+class FabricaAntigos implements Modelo {
 
-    public WiiGolf() {
-        super("WiiGolf");
+    @Override
+    public Esports getEsports() {
+        return new WiiGolf();
     }
 
+    @Override
+    public Rpg getRpg() {
+
+        return new Skyrim();
+    }
 }

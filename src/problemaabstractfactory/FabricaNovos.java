@@ -8,10 +8,17 @@ package problemaabstractfactory;
  *
  * @author lizz
  */
-class WiiGolf extends Esports {
+class FabricaNovos implements Modelo {
 
-    public WiiGolf() {
-        super("WiiGolf");
+    @Override
+    public Esports getEsports() {
+        return new Fifa();
+    }
+
+    @Override
+    public Rpg getRpg() {
+
+        return new BaldursGate3();
     }
 
 }
